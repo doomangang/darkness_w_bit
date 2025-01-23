@@ -6,13 +6,13 @@
 @font-face {
 	font-family: 'JeanLucWeb-Bold';
 		src: url('jeanlucweb-bold.eot');
-		src: local('☺'), url("jeanlucweb-bold.woff") format("woff"), url("jeanlucweb-bold.otf") format("opentype"), url("jeanlucweb-bold#webfontup15foyj") format("svg");
+		src: local('☺'), url("jeanlucweb-bold.woff") format("woff"), url("jeanlucweb-bold.otf") format("opentype"), url("jeanlucweb-bold.svg") format("svg");
 }
 
 @font-face {
 	font-family: 'JeanLucWeb-Thin';
 		src: url('jeanlucweb-bold.eot');
-		src: local('☺'), url("jeanlucweb-thin.woff") format("woff"), url("jeanlucweb-thin.otf") format("opentype"), url("jeanlucweb-thin#webfontdsa4toug") format("svg");
+		src: local('☺'), url("jeanlucweb-thin.woff") format("woff"), url("jeanlucweb-thin.otf") format("opentype"), url("jeanlucweb-thin.svg") format("svg");
 }
 
 

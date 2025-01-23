@@ -1,5 +1,6 @@
-import "../../public/fonts/JeanLuc-Webfonts/stylesheet.css"
+import "@fonts/JeanLuc-Webfonts/stylesheet.css"
 import "./globals.css";
+import "@/assets/style.scss"
 
 export const metadata = {
   title: "portfolio of Jeong Ji-hyun",
