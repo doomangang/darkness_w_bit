@@ -53,7 +53,7 @@ export const skillText = [
     }
 ]
 
-export const siteText = [
+export const projectText = [
     {
         text: ["MINISHELL"],
         title: "Custom Unix Shell",
