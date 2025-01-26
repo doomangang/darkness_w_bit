@@ -2,54 +2,28 @@
   @include position-fixed;
   z-index: 10000;
 }
-
 .header__inner {
   @include flex-between;
-  padding: 1rem;
-  background: rgba(116, 99, 99, 0.1);
+  background-color: rgba(116, 99, 99, 0.1);
   backdrop-filter: blur(15px);
+  padding: 1rem;
 
   .header__logo {
-    font-size: 1.625rem;
+    font-size: 0.9rem;
     text-align: center;
     text-transform: uppercase;
     line-height: 1;
 
     em {
-      display: block;
       font-size: 10px;
+      display: block;
       color: var(--black200);
     }
   }
 
   .header__nav {
-    li {
-      display: inline-block;
 
-      a {
-        text-transform: uppercase;
-        font-size: 14px;
-        padding: 14px;
-        position: relative;
-
-        &::before {
-          content: "";
-          width: calc(100% - 28px);
-          height: 1px;
-          background-color: var(--black);
-          position: absolute;
-          left: 14px;
-          bottom: 10px;
-          transform: scaleX(0);
-          transition: all 0.3s;
-        }
-
-        &:hover::before {
-          transform: scaleX(1);
-        }
-      }
-    }
-    @media (max-width: 800px) {
+    @media (max-width: 800px){
       display: none;
 
       &.show {
@@ -60,13 +34,16 @@
           position: absolute;
           right: 0;
           top: 68px;
-          background: rgba(116, 99, 99, 0.1);
+          background-color: rgba(116,99,99,0.1);
           backdrop-filter: blur(15px);
           z-index: 10000;
+          min-width: 150px;
+          padding: 20px 0;
 
           li {
             display: block;
             text-align: right;
+
             a {
               display: inline-block;
               padding: 10px;
@@ -81,22 +58,51 @@
         width: 20px;
       }
     }
+
+    li {
+      display: inline;
+
+      a {
+        text-transform: uppercase;
+        font-size: 14px;
+        padding: 14px;
+        position: relative;
+
+        &::before {
+          content: '';
+          width: calc(100% - 28px);
+          height: 1px;
+          background-color: var(--black);
+          position: absolute;
+          left: 14px;
+          bottom: 10px;
+          transform: scaleX(0);
+          transition: all 0.3s;
+        }
+        &:hover::before {
+          transform: scaleX(1);
+        }
+      }
+    }
   }
 
   .header__nav__mobile {
+    display: none;
     width: 40px;
     height: 40px;
-    @include flex-center;
     cursor: pointer;
-    display: none;
+
+    @media (max-width: 800px){
+      display: block;
+    }
 
     span {
       display: block;
       width: 40px;
       height: 2px;
       background-color: var(--black);
-      position: relative;
       margin-top: 19px;
+      position: relative;
 
       &::before {
         content: "";
@@ -108,7 +114,6 @@
         top: 6px;
         transition: width 0.3s;
       }
-
       &::after {
         content: "";
         width: 40px;
@@ -119,10 +124,6 @@
         bottom: 6px;
         transition: width 0.3s;
       }
-    }
-
-    @media (max-width: 800px) {
-      display: block;
     }
   }
 }
