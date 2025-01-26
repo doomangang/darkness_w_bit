@@ -1,20 +1,27 @@
-import React from "react";
+import React, {useState} from "react";
 
-import {headerNav} from "@/constants";
+import { headerNav } from "@/constants";
 
 const Header = () => {
-    const [show, setShow] = React.useState(false);
+    const [show, setShow] = useState(false);
+
     const toggleMenu = () => {
         setShow((prevShow) => !prevShow);
-    };
+    }
 
     return (
-        <header id="header" role="heading">
+        <header id="header" role="banner">
             <div className="header__inner">
                 <div className="header__logo">
-                    <a href="/">portfolio<em>next.js</em></a>
+                    <h1>
+                        <a href="#">portfolio<em>next.js</em></a>
+                    </h1>
                 </div>
-                <nav className="header__nav" role="navigation" aria-label="메인 메뉴">
+                <nav
+                    className={`header__nav ${show ? "show" : ""}`}
+                    role="navigation"
+                    aria-label="메인 메뉴"
+                >
                     <ul>
                         {headerNav.map((nav, key) => (
                             <li key={key}>
@@ -27,8 +34,10 @@ const Header = () => {
                     className="header__nav__mobile"
                     id="headerToggle"
                     aria-controls="primary-menu"
-                    aria-expanded="false"
-                    role="button" tabIndex="0"
+                    aria-expanded={show ? "true" : "false"}
+                    role="button"
+                    tabIndex="0"
+                    onClick={toggleMenu}
                 >
                     <span></span>
                 </div>
@@ -37,4 +46,4 @@ const Header = () => {
     )
 }
 
-export default Header;
+export default Header

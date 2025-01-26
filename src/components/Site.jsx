@@ -7,12 +7,12 @@ const Site = () => {
         <section id="site">
             <div className="site__inner">
                 <h2 className="site__title">
-                    Site coding <em>나의 작업물</em>
+                    Site Coding <em>나의 작업물</em>
                 </h2>
                 <div className="site__wrap">
-                    {siteText.map((site, index) => (
-                        <div className={`site__item s${index + 1}`} key={index}>
-                            <span className="num">{index + 1}.</span>
+                    {siteText.map((site, key) => (
+                        <article className={`site__item s${key+1}`} key={key}>
+                            <span className="num">{key+1}.</span>
                             <div className="text">
                                 <div>{site.text[0]}</div>
                                 <div>{site.text[1]}</div>
@@ -30,7 +30,7 @@ const Site = () => {
                                 <span>{site.info[1]}</span>
                                 <span>{site.info[2]}</span>
                             </div>
-                        </div>
+                        </article>
                     ))}
                 </div>
             </div>

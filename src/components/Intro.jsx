@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-import { introText } from "../constants";
+import { introText } from "@/constants";
 
 const Intro = () => {
     return (
@@ -27,10 +27,11 @@ const Intro = () => {
                     </div>
                     <div className="img">
                         <Image
-                            src="/assets/img/godard.jpg"
+                            src={introText.img}
                             alt="어바웃"
-                            width={340}
-                            height={212}
+                            width={300}
+                            height={300}
+                            style={{ width: "100%", height: "auto" }}
                         />
                     </div>
                 </div>
