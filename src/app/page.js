@@ -6,15 +6,21 @@ import Skill from "@/components/Skill";
 import Contact from "@/components/Contact";
 import Education from "@/components/Education";
 import Footer from "@/components/Footer";
+import HeroSection from "@/components/HeroSection";
 
 export default function Home() {
     return (
         <MainLayout>
+            <div className="md:hidden">
+                <HeroSection />
+            </div>
             <AboutMe />
             <Skill />
             <Projects />
             <Education />
-            <Contact />
+            <div className="mt-10md:hidden">
+                <Contact />
+            </div>
             <Footer />
         </MainLayout>
     );

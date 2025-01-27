@@ -29,13 +29,13 @@ const Sidebar = () => {
     }, []);
 
     return (
-        <nav className="flex flex-col space-y-4">
+        <nav className="flex flex-col space-y-4 ml-10">
             {SECTIONS.map((section) => (
                 <a
                     key={section.id}
                     href={`#${section.id}`}
-                    className={`text-gray-600 hover:text-blue-500 ${
-                        activeSection === section.id ? "font-bold text-blue-500" : ""
+                    className={`text-point-blue hover:text-point ${
+                        activeSection === section.id ? "font-gtk italic text-point" : "font-mono light"
                     }`}
                 >
                     {section.label}
