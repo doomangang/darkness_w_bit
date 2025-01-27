@@ -7,8 +7,8 @@ const MainLayout = ({ children }) => {
     return (
         <div>
             {/* 왼쪽 고정 칼럼 */}
-            <aside className="hidden lg:flex fixed top-0 left-0 h-screen w-1/4 bg-gray-50  flex-col">
-                <div className="p-6">
+            <aside className="hidden lg:flex fixed top-0 left-0 h-screen w-1/3  flex-col">
+                <div className="p-20">
                     {/* Hero Section */}
                     <HeroSection />
                 </div>
@@ -24,7 +24,7 @@ const MainLayout = ({ children }) => {
 
             {/* 오른쪽 메인 영역 */}
             {/* margin-left를 Tailwind에서 지원하는 방식으로 처리하거나, 직접 px/%로 명시 */}
-            <main className="ml-0 lg:ml-[25%] w-full lg:w-[75%] p-6">
+            <main className="ml-0 lg:ml-[33%] w-full lg:w-[67%] p-6">
                 {children}
             </main>
         </div>

@@ -5,9 +5,12 @@ import {INTRO} from "@/constants";
 const HeroSection = () => {
     return (
         <div className="mb-4">
-            <h1 className="text-4xl lg:text-3xl font-bold text-gray-800 mb-4">{INTRO.title}</h1>
-            <p className="text-gray-600">
+            <h1 className="text-4xl lg:text-3xl font-jeanluc text-point-sage mb-4">{INTRO.title}</h1>
+            <p className="mb-2 font-mono text-point-lilac">
                 {INTRO.description}
+            </p>
+            <p className="text-point-blue">
+                {INTRO.location}
             </p>
         </div>
     );

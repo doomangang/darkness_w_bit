@@ -1,7 +1,10 @@
 // src/constants/index.js
+import shell from "@/asset/img/Shell-icon.png"
+import raytracer from "@/asset/img/raytracing.png"
+import reactnat from "@/asset/vec/react-native-1.svg"
 
 export const SECTIONS = [
-    { id: "aboutme", label: "About Me" },
+    { id: "aboutme", label: "About" },
     { id: "skills", label: "Skills" },
     { id: "projects", label: "Projects" },
     { id: "education", label: "Education" },
@@ -11,6 +14,7 @@ export const SECTIONS = [
 export const INTRO = {
     title: "Jeong Ji-Hyun,",
     description: 'A developer passionate about creating intuitive applications',
+    location: '📍Seoul, South Korea',
 };
 
 export const ABOUT_ME = {
@@ -56,16 +60,19 @@ export const PROJECTS = {
             title: "Minishell",
             description: "Custom Unix-like shell implementing command parsing, piping, and signal handling.",
             link: "https://github.com/doomangang/minishell",
+            image: shell
         },
         {
             title: "MiniRT",
             description: "3D rendering with ray tracing, focusing on spatial transformations and realistic lighting.",
             link: "https://github.com/doomangang/miniRT",
+            image: raytracer
         },
         {
             title: "MINDEYE",
             description: "Assisting visually impaired pedestrians using real-time navigation and obstacle detection.",
             link: "https://github.com/doomangang/mindeye_front",
+            image: reactnat
         },
     ],
 };
