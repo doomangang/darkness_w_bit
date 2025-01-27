@@ -43,4 +43,4 @@ next-env.d.ts
 .gitignore
 .*
 
-public/fonts/atlas/*
+public/fonts/aaa/*

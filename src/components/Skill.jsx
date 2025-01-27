@@ -4,7 +4,7 @@ import { SKILLS } from "@/constants";
 const Skill = () => {
     return (
         <section id="skills" className="relative py-20 flex justify-center items-center">
-            <h2 className="absolute top-10 text-3xl font-jeanluc mb-10 text-point-jean">{SKILLS.heading}</h2>
+            <h2 className="absolute top-10 text-3xl font-gtk mb-10 text-point-jean">{SKILLS.heading}</h2>
 
             {/* 중심이 되는 원 */}
             <div className="relative m-20 w-[300px] h-[300px] flex justify-center items-center rounded-full">
@@ -18,11 +18,11 @@ const Skill = () => {
                     return (
                         <div
                             key={index}
-                            className="absolute w-32 h-32 bg-point bg-point-blue/40 text-center text-white flex flex-col justify-center items-center rounded-full shadow-md hover:scale-110 hover:shadow-lg transition-all duration-300"
+                            className="absolute w-32 h-32 bg-point bg-point-blue/40 text-center font-gtk italic text-white flex flex-col justify-center items-center rounded-full shadow-md hover:scale-110 hover:shadow-lg transition-all duration-300"
                             style={rotationStyle}
                         >
                             {/* 스킬 카테고리 */}
-                            <span className="text-sm font-jeanluc">{skill.category}</span>
+                            <span className="text-sm font-gtk">{skill.category}</span>
                         </div>
                     );
                 })}

@@ -4,7 +4,7 @@ import { EDUCATION } from '../constants';
 const Education = () => {
     return (
         <section id="education" className="py-20 px-10 text-point-jean">
-            <h2 className="text-3xl font-jeanluc mb-6">{EDUCATION.heading}</h2>
+            <h2 className="text-3xl font-gtk mb-6">{EDUCATION.heading}</h2>
             <div className="flex flex-col gap-8">
                 {EDUCATION.items.map((education, index) => (
                     <div
@@ -12,7 +12,7 @@ const Education = () => {
                         className="group relative flex flex-col transition duration-300"
                     >
                         {/* 학교 이름 */}
-                        <h3 className="text-2xl font-jeanluc text-point-blue group-hover:opacity-100 transition-opacity duration-300">
+                        <h3 className="text-2xl font-gtk text-point-blue group-hover:opacity-100 transition-opacity duration-300">
                             {education.institution}
                         </h3>
                         {/* 학위 */}

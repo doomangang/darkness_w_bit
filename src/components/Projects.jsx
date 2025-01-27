@@ -6,7 +6,7 @@ import Image from "next/image"
 const Projects = () => {
     return (
         <section id="projects" className="py-20 px-10 text-point-jean">
-            <h2 className="text-3xl font-jeanluc mb-6">Projects</h2>
+            <h2 className="text-3xl font-gtk mb-6">Projects</h2>
             <div className="flex flex-col gap-10">
                 {PROJECTS.items.map((project, index) => (
                     <a
@@ -28,10 +28,10 @@ const Projects = () => {
 
                         {/* 오른쪽: 텍스트 */}
                         <div className="flex-1">
-                            <h3 className="text-2xl font-jeanluc font-jeanluc group-hover:text-point-lilac transition-colors duration-300">
+                            <h3 className="text-2xl font-gtk group-hover:text-point-lilac transition-colors duration-300">
                                 {project.title}
                             </h3>
-                            <p className="mt-2 text-point-blue group-hover:text-base-khaki transition-colors duration-300">
+                            <p className="mt-2 text-point-blue font-mono group-hover:text-base-khaki transition-colors duration-300">
                                 {project.description}
                             </p>
                         </div>

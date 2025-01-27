@@ -25,7 +25,8 @@ module.exports = {
       },
       fontFamily: {
         jeanluc: ["jeanlucweb-bold", "sans"], // CSS 파일의 font-family 이름 등록
-        mono: ["Helvetica Monospaced", "monospace"],
+        gtk: ["Atlas Grotesk", "sans-serif"],
+        mono: ["Atlas Typewriter", "monospace"],
       }
     },
   },

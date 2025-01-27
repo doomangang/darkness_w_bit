@@ -9,7 +9,7 @@ const HeroSection = () => {
             <p className="mb-2 font-mono text-point-lilac">
                 {INTRO.description}
             </p>
-            <p className="text-point-blue">
+            <p className="font-gtk text-point-blue">
                 {INTRO.location}
             </p>
         </div>
