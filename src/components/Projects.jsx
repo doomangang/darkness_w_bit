@@ -17,7 +17,7 @@ const Projects = () => {
                         className="group relative flex items-center gap-6 hover:scale-[1.02] transition-transform duration-300 cursor-pointer"
                     >
                         {/* 왼쪽: 이미지 */}
-                        <div className="relative w-40 h-30 overflow-auto">
+                        <div className="relative flex-row p-3 w-40 h-30 overflow-auto">
                             <Image
                                 src={project.image}
                                 alt={project.title}
@@ -27,7 +27,7 @@ const Projects = () => {
                         </div>
 
                         {/* 오른쪽: 텍스트 */}
-                        <div className="flex-1">
+                        <div className="pl-1 flex-1">
                             <h3 className="text-2xl font-gtk group-hover:text-point-lilac transition-colors duration-300">
                                 {project.title}
                             </h3>
