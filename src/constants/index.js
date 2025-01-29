@@ -3,6 +3,13 @@ import shell from "@/asset/img/Shell-icon.png"
 import raytracer from "@/asset/img/raytracing.png"
 import reactnat from "@/asset/vec/react-native-1.svg"
 
+import { FaCuttlefish, FaJava, FaJs, FaDatabase, FaGitAlt, FaSlack, FaLinux } from "react-icons/fa";
+import { SiCplusplus, SiTypescript, SiMysql, SiNotion, SiFigma, SiXcode, SiIntellijidea, SiClion, SiEclipseide, SiVim, SiZsh } from "react-icons/si";
+import { TbTerminal2 } from "react-icons/tb"; // 터미널 아이콘
+import { MdDeveloperMode } from "react-icons/md"; // Cursor (IDE 관련 대체 아이콘)
+import { BiChip, BiLogoVisualStudio } from "react-icons/bi"; // LLDB (디버거 관련 대체 아이콘)
+
+
 export const SECTIONS = [
     { id: "aboutme", label: "About" },
     { id: "skills", label: "Skills" },
@@ -31,11 +38,11 @@ export const SKILLS = {
     items: [
         {
             category: 'Graphics',
-            stack: 'Ray Tracing, OpenGL',
+            stack: 'OpenGL',
         },
         {
             category: 'UI/UX Design',
-            stack: 'Figma, Adobe XD, Prototyping',
+            stack: 'Figma',
         },
         {
             category: 'Frontend',
@@ -43,15 +50,62 @@ export const SKILLS = {
         },
         {
             category: 'System Development',
-            stack: 'C, JavaScript, Python',
+            stack: 'C, JavaScript',
         },
         {
             category: 'Embedded',
-            stack: 'C, JavaScript, Python',
+            stack: 'C, JavaScript',
         },
     ],
 };
 
+// Skills 데이터 정리
+export const TOOLS = {
+    heading: "TOOLS",
+    categories: [
+        {
+            title: "Programming Languages",
+            skills: [
+                { name: "C", icon: FaCuttlefish },
+                { name: "C++", icon: SiCplusplus},
+                { name: "Java", icon: FaJava},
+                { name: "TypeScript", icon: SiTypescript},
+                { name: "JavaScript", icon: FaJs},
+            ],
+        },
+        {
+            title: "IDEs",
+            skills: [
+                { name: "VS Code", icon: BiLogoVisualStudio},
+                { name: "Terminal", icon: TbTerminal2},
+                { name: "IntelliJ IDEA", icon: SiIntellijidea },
+                { name: "CLion", icon: SiClion},
+                { name: "Xcode", icon: SiXcode},
+                { name: "Cursor", icon: MdDeveloperMode }, // 대체 아이콘
+                { name: "Eclipse", icon: SiEclipseide },
+                { name: "Vim", icon: SiVim },
+                { name: "Linux", icon: FaLinux },
+            ],
+        },
+        {
+            title: "Databases",
+            skills: [
+                { name: "MySQL", icon: SiMysql },
+            ],
+        },
+        {
+            title: "Tools",
+            skills: [
+                { name: "Git CLI", icon: FaGitAlt},
+                { name: "Notion", icon: SiNotion},
+                { name: "Figma", icon: SiFigma },
+                { name: "Slack", icon: FaSlack },
+                { name: "LLDB", icon: BiChip }, // 디버깅 관련 대체 아이콘
+                { name: "zsh", icon: SiZsh },
+            ],
+        },
+    ],
+};
 
 export const PROJECTS = {
     heading: "Projects",
