@@ -11,27 +11,27 @@ import HeroSection from "@/components/HeroSection";
 export default function Home() {
     return (
         <MainLayout>
-            <div className="p-5 lg:hidden">
+            <div className="p-5  mb-5 bp:hidden">
                 <HeroSection/>
             </div>
 
-            <div className="p-5">
+            <div className="p-5 mb-5">
                 <AboutMe/>
             </div>
 
-            <div className="p-5">
+            <div className="p-5 mb-5">
                 <Skill/>
             </div>
 
-            <div className="p-5">
+            <div className="p-5 mb-5">
                 <Projects/>
             </div>
 
-            <div className="p-5">
+            <div className="p-5 mb-5">
                 <Education/>
             </div>
 
-            <div className="p-5 lg:hidden">
+            <div className="p-5 mb-5 ">
                 <Contact/>
             </div>
 

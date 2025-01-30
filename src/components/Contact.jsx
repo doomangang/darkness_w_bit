@@ -1,18 +1,28 @@
 import React from 'react';
-import {BiMailSend} from "react-icons/bi";
-import {BiLogoGithub} from "react-icons/bi";
+import { AiFillMail, AiFillGithub } from "react-icons/ai";
 
-const Contact = () => {
+const Contact = ({ sidebarMode = false }) => {
     return (
-        <div className="">
-            <h2 className="text-xl mb-1 font-gtk text-point-blue">Contact</h2>
-            <p  className="text-sm text-point-sage font-mono mb-0.5">
-                📧 <a href="mailto:sp0943@cau.ac.kr" className="no-underline hover:underline decoration-wavy">sp0943@cau.ac.kr</a>
-            </p>
-            <p className="">
-                <BiLogoGithub/> <a href="https://github.com/doomangang"
-                             className="text-sm text-point-sage font-mono no-underline hover:underline decoration-wavy">github.com/doomangang</a>
-            </p>
+        <div className="text-point-jean">
+            <h2 className="text-xl mb-3 bp:mb-1.5 font-gtk ">Contact</h2>
+
+            {/* 이메일 */}
+            <div className="flex items-center gap-2">
+                <a href="mailto:sp0943@cau.ac.kr"
+                   className="flex items-center gap-1 text-sm text-point-lilac font-mono no-underline hover:underline decoration-wavy">
+                    <AiFillMail className="text-xl text-point-blue" />
+                    {!sidebarMode && "sp0943@cau.ac.kr"}
+                </a>
+            </div>
+
+            {/* GitHub */}
+            <div className="flex items-center gap-2 mt-1">
+                <a href="https://github.com/doomangang"
+                   className="flex items-center gap-1 text-sm text-point-lilac font-mono no-underline hover:underline decoration-wavy">
+                    <AiFillGithub className="text-xl  text-point-blue" />
+                    {!sidebarMode && "github.com/doomangang"}
+                </a>
+            </div>
         </div>
     );
 };
