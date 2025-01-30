@@ -7,7 +7,7 @@ const Intro = () => {
             id="intro"
             className="h-screen flex flex-col items-center justify-center bg-gradient-to-br from-blue-500 to-indigo-500 text-white text-center"
         >
-            <h2 className="text-5xl font-gtk mb-4">{INTRO.title}</h2>
+            <h2 className="text-5xl font-gtk">{INTRO.title}</h2>
             <p className="text-lg">{INTRO.description}</p>
         </section>
     );

@@ -11,22 +11,31 @@ import HeroSection from "@/components/HeroSection";
 export default function Home() {
     return (
         <MainLayout>
-            {/* md 이하에서는 HeroSection을 본문에서 표시 */}
-            <div className="lg:hidden">
-                <HeroSection />
+            <div className="p-5  mb-5 bp:hidden">
+                <HeroSection/>
             </div>
 
-            <AboutMe />
-            <Skill />
-            <Projects />
-            <Education />
-
-            {/* md 이하에서는 Contact을 본문에서 표시 */}
-            <div className="mt-10 lg:hidden">
-                <Contact />
+            <div className="p-5 mb-5">
+                <AboutMe/>
             </div>
 
-            <Footer />
+            <div className="p-5 mb-5">
+                <Skill/>
+            </div>
+
+            <div className="p-5 mb-5">
+                <Projects/>
+            </div>
+
+            <div className="p-5 mb-5">
+                <Education/>
+            </div>
+
+            <div className="p-5 mb-5 ">
+                <Contact/>
+            </div>
+
+            <Footer/>
         </MainLayout>
     );
 }

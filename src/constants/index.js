@@ -1,7 +1,7 @@
 // src/constants/index.js
 import shell from "@/asset/img/Shell-icon.png"
 import raytracer from "@/asset/img/raytracing.png"
-import reactnat from "@/asset/vec/react-native-1.svg"
+import mindeye from "@/asset/img/mindeye-5.png"
 
 import { FaCuttlefish, FaJava, FaJs, FaDatabase, FaGitAlt, FaSlack, FaLinux } from "react-icons/fa";
 import { SiCplusplus, SiTypescript, SiMysql, SiNotion, SiFigma, SiXcode, SiIntellijidea, SiClion, SiEclipseide, SiVim, SiZsh } from "react-icons/si";
@@ -20,40 +20,58 @@ export const SECTIONS = [
 
 export const INTRO = {
     title: "Jeong Ji-Hyun,",
-    description: 'A developer passionate about creating intuitive applications',
+    description: 'Bridging technology, design, and storytelling to shape perspectives',
     location: '📍Seoul, South Korea',
 };
 
+export const color =  "#3d5471";
+
 export const ABOUT_ME = {
-    heading: 'About Me',
+    heading: "About Me",
     description: `
-    I specialize in full-stack development, with expertise in creating accessible, efficient, 
-    and engaging software solutions. My passion lies in solving real-world problems 
-    through technology and design.
-  `,
+        <p class="about__desc mb-3">
+        I'm a <strong style="color: ${color};">creative strategist & developer</strong> passionate about crafting meaningful digital experiences.  
+        My journey in tech began with an endless <strong style="color: ${color};">curiosity about how things work</strong> — whether it's software, systems, or the way stories shape our world.
+        </p>
+        <p class="about__desc mb-3">
+            Starting with computer science fundamentals and system architecture,  
+            I built a strong foundation in <strong style="color: ${color};">problem-solving and structured thinking</strong>.  
+            Along the way, I developed a deep interest in product ideation and front-end development,  
+            blending <strong style="color: ${color};">creative storytelling with interactive user experiences</strong>.  
+            Recently, I’ve been exploring <strong style="color: ${color};">visual storytelling, user experience, and design strategy</strong>,  
+            fascinated by how design and technology shape the way we perceive and interact with the world.
+        </p>
+        <p class="about__desc mb-3">
+            Beyond my work, I find inspiration in films, drawing, philosophy, photography, and ice skating.  
+            I love immersing myself in different fields, drawing connections between <strong style="color: ${color};">art, logic, and human experience</strong>.  
+            This broad perspective helps me see digital creation not just as a technical skill,  
+            but as a way to <strong style="color: ${color};">tell stories, evoke emotions, and create meaningful interactions</strong>.
+        </p>
+        <p class="about__desc">
+            I'm always exploring, experimenting, and refining my craft—excited for the next challenge,  
+            the next idea, and the next story to bring to life.
+        </p>
+        
+    `
 };
 
 export const SKILLS = {
-    heading: "I'm Interested In...",
+    heading: "Interested In...",
     items: [
         {
-            category: 'Graphics',
-            stack: 'OpenGL',
-        },
-        {
-            category: 'UI/UX Design',
+            category: 'Graphics & Visual Computing',
             stack: 'Figma',
         },
         {
-            category: 'Frontend',
+            category: 'Front-End Development',
             stack: 'React, React Native, Next.js, TypeScript',
         },
         {
-            category: 'System Development',
+            category: 'System & Software Architecture',
             stack: 'C, JavaScript',
         },
         {
-            category: 'Embedded',
+            category: 'Digital Product Design',
             stack: 'C, JavaScript',
         },
     ],
@@ -74,20 +92,6 @@ export const TOOLS = {
             ],
         },
         {
-            title: "IDEs",
-            skills: [
-                { name: "VS Code", icon: BiLogoVisualStudio},
-                { name: "Terminal", icon: TbTerminal2},
-                { name: "IntelliJ IDEA", icon: SiIntellijidea },
-                { name: "CLion", icon: SiClion},
-                { name: "Xcode", icon: SiXcode},
-                { name: "Cursor", icon: MdDeveloperMode }, // 대체 아이콘
-                { name: "Eclipse", icon: SiEclipseide },
-                { name: "Vim", icon: SiVim },
-                { name: "Linux", icon: FaLinux },
-            ],
-        },
-        {
             title: "Databases",
             skills: [
                 { name: "MySQL", icon: SiMysql },
@@ -100,7 +104,6 @@ export const TOOLS = {
                 { name: "Notion", icon: SiNotion},
                 { name: "Figma", icon: SiFigma },
                 { name: "Slack", icon: FaSlack },
-                { name: "LLDB", icon: BiChip }, // 디버깅 관련 대체 아이콘
                 { name: "zsh", icon: SiZsh },
             ],
         },
@@ -126,7 +129,7 @@ export const PROJECTS = {
             title: "MINDEYE",
             description: "Assisting visually impaired pedestrians using real-time navigation and obstacle detection.",
             link: "https://github.com/doomangang/mindeye_front",
-            image: reactnat
+            image: mindeye
         },
     ],
 };

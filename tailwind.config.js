@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     "./src/app/**/*.{js,ts,jsx,tsx}",
@@ -6,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        "bp": "940px",
+      },
       colors: {
         base: {
           light: "#eff5fd", // 배경색 (off white)
@@ -17,15 +21,16 @@ module.exports = {
           gray: "#222222",
           blue: "#6ba6ef",
           jean: "#303979", // 포인트 색상 (dark jean)
+          tblue: "#4785d1",
           yellow: "#FCE7B6",
           lilac: "#ba7eb5",
           sage: "#77a676",
-          sub: "#a6addc"
+          sub: "#a6addc",
         }
       },
       fontFamily: {
         jeanluc: ["jeanlucweb-bold", "sans"], // CSS 파일의 font-family 이름 등록
-        gtk: ["Atlas Grotesk", "sans-serif"],
+        gtk: ["Host Grotesk", "sans-serif"],
         mono: ["Atlas Typewriter", "monospace"],
       }
     },
