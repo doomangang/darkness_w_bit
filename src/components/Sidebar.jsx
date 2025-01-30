@@ -29,7 +29,7 @@ const Sidebar = () => {
     }, []);
 
     return (
-        <nav className="fixed flex flex-col ml-10 space-y-2">
+        <nav className="fixed flex flex-col space-y-2">
             {SECTIONS.map((section) => (
                 <a
                     key={section.id}

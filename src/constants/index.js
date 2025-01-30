@@ -20,7 +20,7 @@ export const SECTIONS = [
 
 export const INTRO = {
     title: "Jeong Ji-Hyun,",
-    description: 'A developer passionate about creating intuitive applications',
+    description: 'Building Digital Experiences with Code & Design',
     location: '📍Seoul, South Korea',
 };
 

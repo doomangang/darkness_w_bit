@@ -3,8 +3,8 @@ import { EDUCATION } from '../constants';
 
 const Education = () => {
     return (
-        <section id="education" className="py-20 px-10 text-point-jean">
-            <h2 className="text-3xl font-gtk mb-6">{EDUCATION.heading}</h2>
+        <section id="education" className="text-point-jean">
+            <h2 className="text-3xl font-gtk">{EDUCATION.heading}</h2>
             <div className="flex flex-col gap-8">
                 {EDUCATION.items.map((education, index) => (
                     <div

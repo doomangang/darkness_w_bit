@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     "./src/app/**/*.{js,ts,jsx,tsx}",
@@ -25,7 +26,7 @@ module.exports = {
       },
       fontFamily: {
         jeanluc: ["jeanlucweb-bold", "sans"], // CSS 파일의 font-family 이름 등록
-        gtk: ["Atlas Grotesk", "sans-serif"],
+        gtk: ["Host Grotesk", "sans-serif"],
         mono: ["Atlas Typewriter", "monospace"],
       }
     },
