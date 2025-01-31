@@ -2,7 +2,7 @@
 _A Modern and Interactive Portfolio Website built with Next.js and Tailwind CSS._
 
 > _**Screenshot:**_
-![Portfolio Screenshot](./public/asset/img/webpage.png)  
+> <img width="950" alt="스크린샷 2025-01-31 오후 3 07 41" src="https://github.com/user-attachments/assets/ea097e0b-c3c6-460d-bb31-4a89a2b38356" />
 
 ---
 
